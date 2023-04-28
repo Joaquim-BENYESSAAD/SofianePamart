@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    position:relative;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    pointer-events: auto;
+    
+}
+
+nav .middle img{
+  width: auto;
+  max-width: auto;
+  max-height: 54px;
+}
+
+nav .right i{
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+nav .right i:hover{
+    background: white;
+    color: black;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+nav .left a{
+    color: #fff;
+    padding: 12px;    
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 25px;
+}
+
+nav .left a:hover{
+    background: white;
+    color: black;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 110px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.box .right img{
+  height: 100%;
+  width: 100%;
+} 
+
+.box .left{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .left h1{
+    white-space: pre-wrap;
+    line-height: .82;
+    font-size: 120px;
+    margin: 40px;
+    margin-left: 0;
+    
+}
+
+.box .left p{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.box .left .txt2 p{
+    font-size: 13px;
+}
+
+.box .left .btn button{
+    font-size: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 33px;
+    padding-right: 33px;
+    background: #0b0dc8;
+    border: none;
+    color: white;
+    margin-top: 130px;
+    margin-left: 80px;
+}
+
+.box .left .btn button:hover{
+    background: #0b0de6;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    background:transparent;
+    align-items: center;
+    color: #fff;
+}
+
+.box2 .title{
+    font-size: 50px;
+    margin-bottom:30px;
+}
+
+
+.box2 .date{
+    display: flex;
+    border-bottom: solid 1px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    justify-content:space-between
+    
+}
+
+
+
+.box2 .left{
+    padding-right: 50px;
+    font-size: 43px;
+}
+
+.box2 .middle p{
+    padding-right: 50px;
+    font-size: 43px;
+    font-weight: 1000;
+    
+}
+
+.box2 .middle .loc p{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.box2 .right p{
+    font-size: 42px;
+    font-weight: 1000;
+    color: #0012FF;
+}
+
+
+footer .media{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 50px;
+    border-radius: 50%;
+}
+
+footer .media i{
+    padding: 25px;
+}
+
+
+footer .media i:hover{
+    background: white;
+    color: black;
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+
+
+    .box{
+        flex-direction: column;
+        display: flex;
+
+    }
+
+    .box .left{
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .box .left .btn button{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .box .left h1{
+        font-size: 80px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .box2 .date{
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 670px) {
+    nav .right, nav .middle{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+}
